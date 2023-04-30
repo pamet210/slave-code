@@ -14,16 +14,14 @@ radio.onReceivedString(function (receivedString) {
             back()
         }
         radio.sendString("next")
-    }
-    if (receivedString == "rock") {
+    } else if (receivedString == "rock") {
         if (play == 3) {
             go()
         } else if (play == 1) {
             back()
         }
         radio.sendString("next")
-    }
-    if (receivedString == "paper") {
+    } else if (receivedString == "paper") {
         if (play == 1) {
             go()
         } else if (play == 2) {
