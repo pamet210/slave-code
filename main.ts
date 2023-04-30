@@ -9,25 +9,25 @@ radio.onReceivedString(function (receivedString) {
     }
     if (receivedString == "scissor") {
         if (play == 2) {
-            back()
-        } else if (play == 3) {
             go()
+        } else if (play == 3) {
+            back()
         }
     }
     radio.sendString("next")
     if (receivedString == "rock") {
         if (play == 3) {
-            back()
-        } else if (play == 1) {
             go()
+        } else if (play == 1) {
+            back()
         }
     }
     radio.sendString("next")
     if (receivedString == "paper") {
         if (play == 1) {
-            back()
-        } else if (play == 2) {
             go()
+        } else if (play == 2) {
+            back()
         }
     }
     radio.sendString("next")
