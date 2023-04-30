@@ -13,24 +13,24 @@ radio.onReceivedString(function (receivedString) {
         } else if (play == 3) {
             back()
         }
+        radio.sendString("next")
     }
-    radio.sendString("next")
     if (receivedString == "rock") {
         if (play == 3) {
             go()
         } else if (play == 1) {
             back()
         }
+        radio.sendString("next")
     }
-    radio.sendString("next")
     if (receivedString == "paper") {
         if (play == 1) {
             go()
         } else if (play == 2) {
             back()
         }
+        radio.sendString("next")
     }
-    radio.sendString("next")
 })
 function rockpaperscissor () {
     play = randint(1, 3)
